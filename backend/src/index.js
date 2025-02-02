@@ -21,7 +21,7 @@ app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174","http://localhost:5175"], 
+    origin: "http://localhost:5173", 
     credentials: true, 
   })
 );
